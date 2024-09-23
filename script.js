@@ -300,10 +300,10 @@ function gameLoop() {
     player.control(event);
     player.displayBoard();
     player.updateSenses()
-    log.innerText = player.winStatus
+    // log.innerText = player.winStatus
     console.log(player.winStatus)
     if (player.winStatus == 1) {
-      // console.log("won")
+      console.log("won")
       senseBox.innerText="Cheese found..! 😋"
       window.removeEventListener("keydown",handleKeyPress)
     } 
